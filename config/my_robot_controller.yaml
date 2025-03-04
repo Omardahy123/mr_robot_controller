@@ -4,14 +4,13 @@ controller_manager:
     use_sim_time: true
 
     joint_state_broadcaster:
-    type: joint_state_broadcaster/JointStateBroadcaster
+      type: joint_state_broadcaster/JointStateBroadcaster
      
     simple_velocity_controller:
-    type : velocity_controllers/JointGroupVelocityController
-
+      type: velocity_controllers/JointGroupVelocityController
 
 simple_velocity_controller:
   ros__parameters:
-  joints:
-    - base_wheel_right_joint
-    - base_wheel_left_joint
+    joints:
+      - base_wheel_right_joint
+      - base_wheel_left_joint
